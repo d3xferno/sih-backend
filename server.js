@@ -22,6 +22,8 @@ app.use((req,res,next)=>{
     next()
 })
 
+app.get('/',(req,res)=>console.log('Its working'))
+
 app.post('/',(req,res)=>{
     const {email,password} = req.body
     console.log(email)
